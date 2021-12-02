@@ -1,0 +1,1 @@
+COVID_TRACKER_HOST = 'http://localhost:3000'
