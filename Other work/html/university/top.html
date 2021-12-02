@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NURBURGRING UNIVERSITY</title>
+    <link rel = "stylesheet" href = "uni.css">
+    <script type="text/script" src="script1.jss"></script>
+</head>
+<body>
+    <script>
+        function printvalue(){
+            var name= document.form1.name.value;
+            alert("Welcome: " + name);
+        }
+
+    </script>
+    <form name="form1">
+        Enter name: <input type = "text" name = "name"/>
+        <input type="button" onclick = "printvalue()" value="print name"/>
+    </form>
+    <script>
+        function getc(){
+            var num =  document.getElementById("result").value;
+            alert(num*num*num);
+        }
+    </script>
+    <form>
+        Enter number: <input type = "text" id= "result" name ="number"/><br/>
+        <input type ="button" value="cube" onclick="getc()" value = /> 
+    </form>
+    <section class = "header">
+        <nav>
+            <div class = "nav-links">
+                <ul>
+                    <li><a href="top.html"> HOME </a></li>
+                    <li><a href="courses.html" target=_blank> COURSES </a></li>
+                    <li><a href="dept.html" target=_blank> DEPARTMENTS </a></li>
+                    <li><a href="about.html" target=_blank> ABOUT  </a></li>
+                    <li><a href="contact.html" target=_blank> CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class = "uni">
+            <h1>HOME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non dicta, illo modi repellendus dolore incidunt quae at nostrum optio voluptatem in sunt fugit culpa consectetur dolorem inventore? Harum, similique.</p>
+            
+        </div>
+        <div class = "visit"> Visit for more</div>
+    </section>
+    
+</body>
+</html>

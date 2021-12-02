@@ -1,0 +1,17 @@
+#top{
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline wavy rgb(21, 202, 193);
+    background-color: rgb(219, 236, 240);
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(140, 201, 156)
+
+}
+body{
+    background-color:rgb(187, 241, 241);
+}
