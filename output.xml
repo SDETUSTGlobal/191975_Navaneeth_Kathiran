@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211202 14:44:38.897" rpa="false" schemaversion="2">
+<suite id="s1" name="Auto" source="D:\UST\191975_final_project\TestCases\auto.robot">
+<test id="s1-t1" name="Open Browser To Welcome Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${WELCOME URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211202 14:44:39.686" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000/'.</msg>
+<status status="PASS" starttime="20211202 14:44:39.686" endtime="20211202 14:44:45.179"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211202 14:44:45.182" endtime="20211202 14:44:45.378"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20211202 14:44:45.378" endtime="20211202 14:44:45.379"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:39.685" endtime="20211202 14:44:45.379"/>
+</test>
+<test id="s1-t2" name="Go To Welcome Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${WELCOME URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211202 14:44:45.384" level="INFO">Opening url 'http://127.0.0.1:5000/'</msg>
+<status status="PASS" starttime="20211202 14:44:45.383" endtime="20211202 14:44:45.794"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:45.382" endtime="20211202 14:44:45.795"/>
+</test>
+<test id="s1-t3" name="Input UID">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>uid</arg>
+<arg>${VALID UID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211202 14:44:45.799" level="INFO">Typing text '191975' into text field 'uid'.</msg>
+<status status="PASS" starttime="20211202 14:44:45.798" endtime="20211202 14:44:46.833"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:45.797" endtime="20211202 14:44:46.834"/>
+</test>
+<test id="s1-t4" name="Input Username">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>${VALID Uname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211202 14:44:46.837" level="INFO">Typing text 'Navaneeth Kathiran' into text field 'username'.</msg>
+<status status="PASS" starttime="20211202 14:44:46.837" endtime="20211202 14:44:47.930"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:46.836" endtime="20211202 14:44:47.931"/>
+</test>
+<test id="s1-t5" name="Input Company">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>company</arg>
+<arg>${VALID company}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211202 14:44:47.933" level="INFO">Typing text 'UST' into text field 'company'.</msg>
+<status status="PASS" starttime="20211202 14:44:47.933" endtime="20211202 14:44:48.961"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:47.932" endtime="20211202 14:44:48.962"/>
+</test>
+<test id="s1-t6" name="Input Email">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>email</arg>
+<arg>${VALID email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211202 14:44:48.965" level="INFO">Typing text 'Navaneeth.Kathiran@ust.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20211202 14:44:48.964" endtime="20211202 14:44:50.028"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:48.963" endtime="20211202 14:44:50.029"/>
+</test>
+<test id="s1-t7" name="Submit Credentials">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>submit_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211202 14:44:50.033" level="INFO">Clicking button 'submit_button'.</msg>
+<status status="PASS" starttime="20211202 14:44:50.033" endtime="20211202 14:44:52.402"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:50.032" endtime="20211202 14:44:52.403"/>
+</test>
+<test id="s1-t8" name="Success Page Should Be Open">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${SUCCESS URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20211202 14:44:52.719" level="INFO">Current location is 'http://127.0.0.1:5000/success'.</msg>
+<status status="PASS" starttime="20211202 14:44:52.406" endtime="20211202 14:44:52.719"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Success!</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211202 14:44:53.032" level="INFO">Page title is 'Success!'.</msg>
+<status status="PASS" starttime="20211202 14:44:52.721" endtime="20211202 14:44:53.032"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:52.405" endtime="20211202 14:44:53.033"/>
+</test>
+<test id="s1-t9" name="Close Browser">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211202 14:44:53.035" endtime="20211202 14:44:56.549"/>
+</kw>
+<status status="PASS" starttime="20211202 14:44:53.034" endtime="20211202 14:44:56.550"/>
+</test>
+<status status="PASS" starttime="20211202 14:44:38.900" endtime="20211202 14:44:56.553"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="Auto">Auto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
